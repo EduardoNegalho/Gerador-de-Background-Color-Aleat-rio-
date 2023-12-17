@@ -1,0 +1,99 @@
+/* Adicione estas regras CSS ao seu arquivo style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f5f8;
+}
+
+nav {
+  background-color: #e4e4e4;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+
+.nav-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f15025;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto; /* Alterado para centralizar o container na página */
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+.btn-hero {
+  background-color: #b4b0af;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #d43f1a;
+}
+
+.color {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Adicione regras de estilo específicas para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  nav {
+      padding: 0.3rem; /* Diminui a altura da navegação para dispositivos móveis */
+  }
+
+  .nav-links {
+      margin-top: 10px;
+  }
+
+  .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .container {
+      padding: 2rem;
+  }
+}
